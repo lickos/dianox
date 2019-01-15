@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-header></app-header>
+    <app-carousel></app-carousel>
+    <app-welcome></app-welcome>
+    <app-section1></app-section1>
+    <app-services></app-services>
+    <app-about></app-about>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header";
+import Carousel from "./components/Carousel";
+import Welcome from "./components/welcome";
+import Section1 from "./components/section1";
+import Services from "./components/Services";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    "app-header": Header,
+    "app-carousel": Carousel,
+    "app-welcome": Welcome,
+    "app-section1": Section1,
+    "app-services": Services,
+    "app-about": About,
+    "app-contact": Contact,
+    "app-footer": Footer
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 </style>
